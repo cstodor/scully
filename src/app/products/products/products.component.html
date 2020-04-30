@@ -1,0 +1,7 @@
+<h1>Products</h1>
+
+<div *ngFor="let p of products">
+    <h2 [routerLink]="'/products/' + p.id">{{ p.name }}</h2>
+    <p>{{ p.descr }}</p>
+    <p>{{ p.price }}</p>
+</div>
